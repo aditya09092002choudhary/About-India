@@ -51,7 +51,7 @@ let questions = [
         ans: "Ganga"
     },
     {
-        ques: "How Many states are ther in India ?",
+        ques: "How Many states are there in India ?",
         option1: "26",
         option2: "27",
         option3: "28",
@@ -67,7 +67,7 @@ let questions = [
         ans: "New Delhi"
     },
     {
-        ques: "How many Union Territories ?",
+        ques: "How many Union Territories are there in india ?",
         option1: " 6",
         option2: "7",
         option3: "8",
@@ -75,7 +75,7 @@ let questions = [
         ans: "8"
     },
     {
-        ques: "Who is President of India ?",
+        ques: "Who is the President of India ?",
         option1: " Narendra Modi",
         option2: "Ram Nath Kovind",
         option3: " Yogi Aditya Nath",
@@ -104,7 +104,7 @@ function selectNextQuestion() {
     if (questions.length <= 0) {
         document.querySelector(".container").classList.add("display");
         document.querySelector(".restart").classList.remove("display");
-        document.querySelector(".score > h4").innerHTML = `Score: ${score}`;
+        document.querySelector(".score > h4").innerHTML = `Score: ${score}/10`;
         return;
     }
     selectedQuestion = Math.floor(Math.random() * questions.length);
